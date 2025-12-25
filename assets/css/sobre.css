@@ -1,0 +1,29 @@
+.sobre{
+    text-align: left;
+    max-width: 50%;
+    margin: 18px auto;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    color: #f5f5f5;
+    padding: 2em;
+}
+section.sobre .container p{
+    padding-top: 5px;
+}
+
+section.missao .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.missao .container p{
+    padding: 10px;
+}
+.card{
+    background-color: var(--cor3);
+    color: #f5f5f5;
+    overflow: auto;
+    padding: 1em;
+    margin: 10px auto;
+}
