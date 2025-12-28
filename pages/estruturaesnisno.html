@@ -14,6 +14,7 @@
 
     <!--estilos-->
     <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/estrutura.css">
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/png">
 
     <!--fontes-->
@@ -28,6 +29,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
+
 <body>
     <header><!--cabeçalho-->
         <a href="../index.html"><img id="logo" src="../assets/img/logo.png" alt="logo do site"></a>
@@ -40,8 +42,109 @@
         </nav>
 
     </header>
-    <h1>ensino HTML</h1>
-    <button><i id="voltar-topo" class="bi-arrow-up-circle"></i></button>
+    <main class="container">
+        <article class="introducaohtml">
+            <h1>Introdução ao HTML</h1>
+            <p>Html é uma linguagem usada para estruturar um site. Quando acessamos uma página na internet, tudo o que
+                visualizamos começa com HTML. Ele não é uma linguagem de programação, mas sim uma <strong>linguagem de
+                    marcação.</strong>Utilizamos tags para organizar o conteúdo a página. Com HTML podemos criar
+                títulos, parágrafos, imagens, links, listas, etc.. Onde cada elemento do site é representado por uma tag
+                específica. Normalmente as tags possuem abertura e fechamento. Por exemplo : Um parágrafo começa
+                &lt;p&gt; e fecha com &lt;/p&gt; no meio fica o conteúdo.</p>
+            <p>O navegador interpreta essas tags e mostra o conteúdo na tela.
+                Sem HTML, o site não teria forma nem organização.
+                O HTML funciona junto com o CSS e o JavaScript.
+                O CSS cuida da aparência, como cores e layouts.
+                O JavaScript adiciona interatividade, como botões e animações.
+                O HTML é sempre o primeiro passo para quem quer aprender desenvolvimento web.
+                Ele é simples de entender e fácil de praticar.
+                Qualquer pessoa pode começar a aprender HTML usando apenas um editor de texto.
+                Arquivos HTML são salvos com a extensão .html.
+                Ao abrir esse arquivo no navegador, a página já é exibida.
+                Por isso, HTML é a base de todo site.
+                Aprender HTML é essencial para quem quer trabalhar com a web.</p>
+
+        </article>
+
+
+        <section class="video">
+            <iframe width="80%" height="400px" src="https://www.youtube.com/embed/BjQvU8H_DKY?rel=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <article class="video-info">
+                <h2>Matheus Batisti</h2>
+                <p>Aqui você entende um pouco sobre HTML, com um dos melhores professores de programação. O HTML
+                    semântico é a forma mais profissional de escrever uma estrutura.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <article class="introducaohtml">
+                <h2>📘 Conhecendo a Estrutura HTML</h2>
+                <p>Abaixo você pode ver uma estrutura básica de HTML. Agora que já entendemos o que é HTML, vamos
+                    conhecer as tags principais e a estrutura que compõe um arquivo HTML.
+                    Todo site, simples ou avançado, começa com essa base.
+                    Se você dominar isso, qualquer site passa a fazer sentido</p>
+                <pre>
+                <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Meu primeiro site&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+
+            &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+            &lt;p&gt;Esse é meu primeiro site.&lt;/p&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+                </code>
+            </pre>
+
+            </article>
+        </section>
+
+        <section class="introducaohtml">
+            <h2>Vamos entender algumas coisas importantes.</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+            <ul>
+                <li>Informa ao navegador que o documento é HTML5</li>
+
+                <li>Evita erros de renderização</li>
+
+                <li>Sempre deve ser a primeira linha</li>
+
+                <li>Sem isso, o navegador pode interpretar o site de forma errada</li>
+
+            </ul>
+        <pre>
+            <code>
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Meu primeiro site&lt;/title&gt;
+        &lt;/head&gt;
+            </code>
+        </pre>
+        <p>O head é onde fica as configurações invisíveis ao usuário</p>
+        <ul>
+            <li>Titulo</li>
+            <li>Links de estilos</li>
+            <li>Meta tags</li>
+            <li>A meta Charset="utf-8" permite o uso de acentos, Ç e símbolos.</li>
+        </ul>
+        <p>Para fazer uma ligação de estilo Css, basta colocar o link correto no head.</p>
+        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+        <p>É bastante importante que faça a ligação correta no atributo href.</p>
+        </section>
+
+
+
+    </main>
 
     <footer><!--rodape-->
         <div>Desenrolando &copy; Desenvolvido por Eridenes Santos 2025.</div>
@@ -55,4 +158,5 @@
 
     <script src="../assets/js/script.js"></script>
 </body>
+
 </html>
